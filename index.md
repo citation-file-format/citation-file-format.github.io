@@ -66,7 +66,7 @@ implementation of a standard format for CITATION files." at the [Workshop on
 Sustainable Software for Science: Practice and Experiences
 (WSSSPE5.1)](http://wssspe.researchcomputing.org.uk/wssspe5-1/) (6 September
 2017, Manchester, UK). The group discussed the potential and outlined
-requirements for a format for machine-readable CITATION files[^citation-files],
+requirements for a format for machine-readable CITATION files,
 and has authored a blog post on the subject, which will be published on the
 [blog](http://software.ac.uk/blog/) of the [Software Sustainability
 Institute](http://software.ac.uk/).
