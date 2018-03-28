@@ -61,7 +61,7 @@ and manifests its status as a compromise between what is currently *useful* and
 
 ## Context
 
-Citation File Format is an indirect outcome of the discussion group "DS3. Development and
+Software citations enhance the dissemination of code, improve software sustainability and ensure authors receive credit for development work. The Citation File Format is an indirect outcome of the discussion group "DS3. Development and
 implementation of a standard format for CITATION files." at the [Workshop on
 Sustainable Software for Science: Practice and Experiences
 (WSSSPE5.1)](http://wssspe.researchcomputing.org.uk/wssspe5-1/) (6 September
