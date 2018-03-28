@@ -241,7 +241,7 @@ The primary citation metadata provided to users that wish to cite the software
 version which the CFF file is for. This metadata can be provided via a subset
 of the keys from the table below. The keys follow the basic requirements for
 software citation metadata for the three basic use cases, as detailed in
-{% cite principles -l 31 --style ./_bibliography/apa-text.csl %} and reproduced
+{% cite principles -l 6 --style ./_bibliography/apa-text.csl %} and reproduced
 below for convenience.
 
   | Use case:           | Use software for a paper | Use software in/with new software | Store software entry |
@@ -256,7 +256,7 @@ below for convenience.
   | Description         | +                        | +                                 | +                    |
   | Keywords            |                          |                                   | +                    |
 
-Table: Basic requirements for citation use cases, reproduced from {% cite principles -l 31 --style ./_bibliography/apa-text.csl %}. Solid circles (●) indicate that the use case depends on that metadata, plus signs (+) indicate that the use case would benefit from that metadata if available.
+Table: Basic requirements for citation use cases, reproduced from {% cite principles -l 6 --style ./_bibliography/apa-text.csl %}. Solid circles (●) indicate that the use case depends on that metadata, plus signs (+) indicate that the use case would benefit from that metadata if available.
 {: .text-right}
 
 Provision of the metadata should follow the best
