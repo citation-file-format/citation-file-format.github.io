@@ -976,43 +976,6 @@ contact:
     tel: +850 (0)123-45-666
 {% endhighlight %}
 
-### Software with a further reference
-
-Where authors wish to encourage citation of an outline paper with citation of their software, we recommend the use of [reference keys](#references-optional) to highlight the existence of further references.
-
-{% highlight yaml %}
-cff-version: 1.0.3
-message: If you use My Research Tool, please cite both the software and the outline paper.
-authors:
-  - family-names: Doe
-    given-names: Jane
-  - family-names: Bielefeld
-    name-particle: von
-    given-names: Arthur
-  - family-names: McAuthor
-    given-names: Juniper
-    name-suffix: Jr.
-title: My Research Tool
-version: 1.0.4
-doi: 10.5281/zenodo.1234
-date-released: 2017-12-18
-references:
-  - type: article
-    scope: Cite this paper if you want to reference the general concepts of MRT.
-    authors:
-      - family-names: Doe
-        given-names: Jane
-      - family-names: Bielefeld
-        name-particle: von
-        given-names: Arthur
-    title: "My Research Tool: A 100% accuracy syntax parser for all languages"
-    year: 2099
-    journal: Journal of Hard Science Fiction
-    volume: 42
-    issue: "13"
-    doi: 10.9999/hardscifi-lang.42132
-{% endhighlight %}
-
 ### Source code without a DOI
 
 We recognize that there are certain situations where it may not be possible to
@@ -1068,9 +1031,46 @@ date-released: 2017-12-18
 repository-artifact: https://hu.berlin/nexus/mrt-kickstarter/2.0.4/mrt2-kickstarter.exe
 {% endhighlight %}
 
-## Some `references` examples
+### Software with a further reference
 
-### `art`
+Where authors wish to encourage citation of an outline paper with citation of their software, we recommend the use of [reference keys](#references-optional) to highlight the existence of further references.
+
+{% highlight yaml %}
+cff-version: 1.0.3
+message: If you use My Research Tool, please cite both the software and the outline paper.
+authors:
+  - family-names: Doe
+    given-names: Jane
+  - family-names: Bielefeld
+    name-particle: von
+    given-names: Arthur
+  - family-names: McAuthor
+    given-names: Juniper
+    name-suffix: Jr.
+title: My Research Tool
+version: 1.0.4
+doi: 10.5281/zenodo.1234
+date-released: 2017-12-18
+references:
+  - type: article
+    scope: Cite this paper if you want to reference the general concepts of MRT.
+    authors:
+      - family-names: Doe
+        given-names: Jane
+      - family-names: Bielefeld
+        name-particle: von
+        given-names: Arthur
+    title: "My Research Tool: A 100% accuracy syntax parser for all languages"
+    year: 2099
+    journal: Journal of Hard Science Fiction
+    volume: 42
+    issue: "13"
+    doi: 10.9999/hardscifi-lang.42132
+{% endhighlight %}
+
+### Some references examples
+
+#### art
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1098,7 +1098,7 @@ references:
       country: ES
 {% endhighlight %}
 
-### `article`
+#### article
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1136,7 +1136,7 @@ references:
     url: https://doi.org/10.7717/peerj-cs.86
 {% endhighlight %}
 
-### `blog`
+#### blog
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1163,7 +1163,7 @@ references:
       country: DE
 {% endhighlight %}
 
-### `book`
+#### book
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1189,7 +1189,7 @@ references:
     medium: print
 {% endhighlight %}
 
-### `conference-paper`
+#### conference-paper
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1229,7 +1229,7 @@ references:
     doi: 10.5281/zenodo.1234
 {% endhighlight %}
 
-### `edited-work`
+#### edited-work
 
 Note that the editors of the edited work must be specified under the `authors`
 key. Specific citation styles may or may not attach a suffix to the authors,
@@ -1259,7 +1259,7 @@ references:
       country: DE
 {% endhighlight %}
 
-### `report`
+#### report
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1282,7 +1282,7 @@ references:
     date-accessed: 2017-09-23
 {% endhighlight %}
 
-### `thesis`
+#### thesis
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1328,12 +1328,11 @@ software packages and web services), to support the following use cases for CFF:
 
 Contributions to the format specifications are welcome! For details on how to
 contribute, please refer to the GitHub repository for CFF at
-<http://github.com/sdruskat/citation-file-format>.
+<https://github.com/citation-file-format/citation-file-format>.
 
 # License
 
-This document is licensed under a [CC-BY-
-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) license. The full
+This document is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). The full
 license text can be obtained from the URL
 <https://creativecommons.org/licenses/by-sa/4.0/legalcode>.
 
