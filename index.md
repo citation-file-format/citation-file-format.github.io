@@ -9,13 +9,13 @@ Citation File Format is a human- and machine-readable file format in [YAML 1.2](
 citation metadata for software. It is maintained openly on GitHub:
 <https://github.com/citation-file-format>.
 
-The current version is [{{ site.current }}](/{{ site.current }}/), for which there is [detailed format specification](/{{ site.current }}/).
+The current version is [{{ site.current }}](/{{ site.current }}/), for which there is a [detailed format specification](/{{ site.current }}/).
 
 ## Example
 
 If you want to make your software easily citable, you can put a file called
 `CITATION.cff` in the root of your repository. This file should provide at least the
-minimally necessary metadata to cite your software. An example: 
+minimally necessary metadata to cite your software. For example: 
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -23,21 +23,19 @@ message: If you use this software, please cite it as below.
 authors:
   - family-names: Druskat
     given-names: Stephan
-    orcid: https://orcid.org/0000-0003-4925-7248
 title: My Research Tool
 version: 1.0.4
 doi: 10.5281/zenodo.1234
 date-released: 2017-12-18
 {% endhighlight %}
 
-This file can be used to provide much more information about your software. For
-an overview of what kind of metadata for software can be supplied with the
+A CFF file can also be used to record much more information about your software. For
+an overview of what software metadata can be supplied with the
 Citation File Format, please see [the current version of the format specifications](/{{ site.current }}/).
 
 ## Tools
 
-There are a number of tools that can help you work with the Citation File Format.
-For an overview, please see [the main GitHub repository](https://github.com/citation-file-format/citation-file-format).
+There are a number of tools that can help you work with the Citation File Format to perform useful tasks: generate a `CITATION.cff` file from a [DOI](http://www.doi.org/), convert CFF files to formats required by reference management software', or validate `CITATION.cff` files. For further information, please see [the CFF GitHub repository](https://github.com/citation-file-format/citation-file-format#tools).
 
 ## Status
 
@@ -59,7 +57,7 @@ and *15. Store software entry* (cf. Table 2, {% cite principles --style ./_bibli
 The basic structure of Citation File Format (i.e., having a *message* and one or more
 *references*) explicitly reflects the structure of plain-text `CITATION` files
 and manifests its status as a compromise between what is currently *useful* and
-*usable*, and what is *desired* (fully transitive credit and attribution).
+*usable*, and what is *desired* (fully transitive credit and attribution). As such, it has value both as a discrete format with everyday application and as a input format populating other citation formats.
 
 ## Context
 
