@@ -133,13 +133,13 @@ metadata for citation easily. CFF-Core aims at covering use cases *1 (Use softwa
 *2 (Use software in/with new software)*, and *15 (Store software entry)* as
 defined in the software citation principles paper {% cite principles %}.
 
-CFF-Core can be used as a source format for [CodeMeta](https://github.com/codemeta/codemeta) JSON,
+CFF-Core can be used as a human-writable source and input format for [CodeMeta](https://github.com/codemeta/codemeta) JSON,
 which is emerging as the standard format for software metadata.
 
 Further development of CFF will include a CFF-Meta module which will provide a set
 of keys to provide more general metadata for research software. CFF-Meta will
-implement the complete set of CodeMeta keys, and will be usable as an extension
-to CFF-Core.
+implement the complete set of [CodeMeta](https://github.com/codemeta/codemeta) keys, and will be usable as an extension
+to CFF-Core. For more information, see '[Infrastructure](#infrastructure)'.
 
 ## Goals
 
@@ -879,14 +879,11 @@ and pasted into a `CITATION.cff` file and will validate against the
 ## Software examples
 
 The main focus of CFF-Core is to comprehensively cover the provision of
-citation metadata for software. To this end, it should always be used based on
-the Software Citation Principles {% cite principles %}! Please make sure you
-follow the best practices wherever possible. Two typical scenarios for
-software citation metadata include the existence and respectively lack of a
-DOI for the software for which citation metadata is provided, for both of which
-examples follow.
+citation metadata for software. To this end, use of CFF-Core should - wherever possible - be based on
+the Software Citation Principles {% cite principles %}. Scenarios for
+software citation are listed below. These are not intended to be comphrensive, but rather to represent both typical and edge cases for software citation.
 
-### A software with a DOI
+### Software with a DOI
 
 Note that {% cite principles -l 12 --style ./_bibliography/apa-text.csl %} recommend
 
@@ -945,7 +942,7 @@ license: Apache-2.0
 url: https://sdruskat.github.io/my-research-tool
 {% endhighlight %}
 
-### A software without a DOI
+### Software without a DOI
 
 For software without a DOI, it is recommended that "the metadata should still
 provide information on how to access the specific software, but this may be a
@@ -980,6 +977,8 @@ contact:
 {% endhighlight %}
 
 ### Software with a further reference
+
+Where authors wish to encourage citation of an outline paper with citation of their software, we recommend the use of [reference keys](#references-optional) to highlight the existence of further references.
 
 {% highlight yaml %}
 cff-version: 1.0.3
@@ -1016,7 +1015,7 @@ references:
 
 ### Source code without a DOI
 
-> We recognize that there are certain situations where it may not be possible to
+We recognize that there are certain situations where it may not be possible to
 follow the recommended best-practice. For example, if (1) the software authors
 did not register a DOI and/or release a specific version, or (2) the version of
 the software used does not match what is available to cite. In those cases,
