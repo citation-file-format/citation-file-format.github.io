@@ -347,7 +347,7 @@ CFF-Core defines the following reference keys.
   | `abbreviation`          | String                                                                           | The abbreviation of the work                                                        |
   | `abstract`              | String                                                                           | The abstract of a work                                                              |
   | `authors`               | Collection of *[entity](#entity-objects)* or *[person objects](#person-objects)* | The author of a work                                                                |
-  | `collection-doi`        | String                                                                           | The DOI of a collection conttaining the work                                        |
+  | `collection-doi`        | String                                                                           | The DOI of a collection containing the work                                        |
   | `collection-title`      | String                                                                           | The title of a collection or proceedings                                            |
   | `collection-type`       | String                                                                           | The type of a collection                                                            |
   | `commit`                | String                                                                           | The (e.g., Git) commit hash or (e.g., Subversion) revision number of the work       |
@@ -444,7 +444,7 @@ references:
 These keys take a collection of entity objects or
 [person objects](#person-objects) as value. Person objects
 provide a fixed set of keys to reference individuals, including a detailed
-set for specifiying personal names, an affiliation, etc.
+set for specifying personal names, an affiliation, etc.
 
 Example:
 
@@ -889,7 +889,7 @@ and pasted into a `CITATION.cff` file and will validate against the
 The main focus of CFF-Core is to comprehensively cover the provision of
 citation metadata for software. To this end, use of CFF-Core should - wherever possible - be based on
 the Software Citation Principles {% cite principles %}. Scenarios for
-software citation are listed below. These are not intended to be comphrensive, but rather to represent both typical and edge cases for software citation.
+software citation are listed below. These are not intended to be comprehensive, but rather to represent both typical and edge cases for software citation.
 
 The following sections list recommendations for producing CITATION files in various circumstances.
 In particular, if a DOI is available this information should be included.  A DOI is not required, 
