@@ -35,7 +35,7 @@ Once a version is release-ready, do the following:
 - In `_config.yml`, set `current` to the version number, e.g., `0.9-RC1`.
 - Add the version and a link to the respective schema release to the table in [versions.md](https://github.com/citation-file-format/citation-file-format.github.io/blob/src/versions.md).
   Create a new version on Zenodo to reserve a DOI, add that DOI to the versions table.
-- Add the version in the PDF link for addition to GitHub release .travis.yml
+- Change the version in the PDF link for the addition to the GitHub release in [.travis.yml](https://github.com/citation-file-format/citation-file-format.github.io/blob/src/.travis.yml)
 - Commit the changes
 - Run changes.sh to create a list of changes to display on the landing page
 - Merge the version branch to `src` and create a version tag.
