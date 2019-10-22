@@ -37,7 +37,7 @@ Once a version is release-ready, do the following:
   Create a new version on Zenodo to reserve a DOI, add that DOI to the versions table.
 - Change the version in the PDF link for the addition to the GitHub release in [.travis.yml](https://github.com/citation-file-format/citation-file-format.github.io/blob/src/.travis.yml)
 - Commit the changes
-- Run changes.sh to create a list of changes to display on the landing page
+- Add the correct version number in, and run, `changes.sh` to create a list of changes to display on the landing page
 - Merge the version branch to `src` and create a version tag.
 - Push `src`. Travis CI will pick up the pushed commit and [build](#build) it. If you don't want your commits to be built automatically, add `[skip ci]` to your commit message.
 
