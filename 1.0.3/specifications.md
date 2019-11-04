@@ -65,7 +65,7 @@ JSON file.
 
 CFF Version {{ page.version }} has been developed by [Stephan Druskat](https://github.com/sdruskat) with contributions from the following.
 
-. Jurriaan H. Spaaks ([@jspaaks](https://github.com/jspaaks)) co-maintains CFF and helped developing a strategy for project process.
+- Jurriaan H. Spaaks ([@jspaaks](https://github.com/jspaaks)) co-maintains CFF and helped developing a strategy for project process.
 - Morane Gruenpeter ([@moranegg](https://github.com/moranegg)) helped prepare CFF 1.0-RC1 for the CodeMeta crosswalk, and tested the crosswalk.
 - Neil Chue Hong ([@npch](https://github.com/npch)) consulted and helped prepare CFF 1.0-RC1 for the CodeMeta crosswalk.
 - Robert Haines ([@hainesr](https://github.com/hainesr)) has improved the 1.0.3 format specifications (Pull Requests [#1](https://github.com/citation-file-format/citation-file-format.github.io/pull/1), [#2](https://github.com/citation-file-format/citation-file-format.github.io/pull/2)).
