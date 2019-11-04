@@ -1128,23 +1128,26 @@ date-released: 2017-12-18
 references:
   - type: article
     authors:
-      - family-names: Howison
-        given-names: James
-        affiliation: "School of Information, University of Texas at Austin"
-        orcid: https://orcid.org/0000-0002-5702-149X
-      - family-names: Bullard
-        given-names: Julia
-        affiliation: "University of British Columbia"
-        orcid: https://orcid.org/0000-0001-7989-7305
-    title: "Software in the scientific literature: Problems with seeing, finding, and using software mentioned in the biology literature"
+      - family-names: Smith
+        given-names: Arfon M.
+      - family-names: Katz
+        given-names: Daniel S.
+        affiliation: "National Center for Supercomputing Applications &
+        Electrical and Computer Engineering Department & School of Information
+        Sciences, University of Illinois at Urbana-Champaign, Urbana, Illinois,
+        United States"
+        orcid: https://orcid.org/0000-0001-5934-7525
+      - family-names: Niemeyer
+        given-names: Kyle E.
+      - name: "FORCE11 Software Citation Working Group"
+        website: https://www.force11.org/group/software-citation-working-group
+    title: "Software citation principles"
     year: 2016
-    journal: "Journal of the Association for Information Science and Technology"
-    volume: 67
-    issue: 9
-    start: 2137
-    end: 2155
-    doi: 10.1002/asi.23538
-    url: https://doi.org/10.1002/asi.23538
+    journal: PeerJ Computer Science
+    volume: 2
+    issue: e86
+    doi: 10.7717/peerj-cs.86
+    url: https://doi.org/10.7717/peerj-cs.86
 {% endhighlight %}
 
 #### blog
