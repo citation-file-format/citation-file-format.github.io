@@ -1,36 +1,27 @@
 language: python
 python:
-  - 3.6
-  
+- 3.6
 install:
-  # Install a newer version of  Pandoc
-  - wget https://github.com/jgm/pandoc/releases/download/2.0.4/pandoc-2.0.4-1-amd64.deb
-  - sudo dpkg -i pandoc-2.0.4-1-amd64.deb
-  - pandoc --version
-  - sudo apt-get -f install
-  # Install TeXLive and Jekyll
-  - sudo apt-get install -y texlive-full jekyll
-  # Install Python requirements
-  - pip install -r requirements.txt
-
+- wget https://github.com/jgm/pandoc/releases/download/2.0.4/pandoc-2.0.4-1-amd64.deb
+- sudo dpkg -i pandoc-2.0.4-1-amd64.deb
+- pandoc --version
+- sudo apt-get -f install
+- sudo apt-get install -y texlive-full jekyll
+- pip install -r requirements.txt
 script:
-  # Clone repo
-  - git clone https://${GITHUB_TOKEN}@github.com/citation-file-format/citation-file-format.github.io.git --branch master _site
-  # Build PDFs
-  - python build-pdfs.py
-  # Build the Jekyll site
-  - bash travis-build.sh
-
-exclude: [vendor]
-
+- git clone https://${GITHUB_TOKEN}@github.com/citation-file-format/citation-file-format.github.io.git
+  --branch master _site
+- python build-pdfs.py
+- bash travis-build.sh
+exclude:
+- vendor
 sudo: required
-
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key:
-    secure: "BiIpY2KWsO+GDj/+CWcBY9dwmPlYEEwWXqI0uXEKZNNWy4uWjWn625f1x+krTy5RzfH29r1IWub9w0Xf80vtIkqVBEpxGUPYPayHKC1Lal8YIgXCxPTstOKPNuYAWdf2/xoD3tiQrbBt6gAGm/+Pg9knOFRq+T1mYKHZKQTIsSDpZyb7FEG0a67fylJlRY+HGwEdDGc166DLottSMjiwLRbwd7rkYhLTNPeouT7KF7GiAeNXezRwKSylSnkpsibS5J/XWDOuyu+7oW8P11TIaVy22BeMj8SWN9KUQYozqMg+XWjt8zYlZjhB/bF+WiJ21zgw/TTtdnyZJmAuR7xMWj7auRouw4vQuinyTfjn8EmUw2TnOch/1I7yNgAmcF8vTmm2EdueIKEo6BHIH0tb03I1BGDR+bmyfsG9+K5WexsgNuU5UTPss+Jaebq+ZH7u2bVrutYoPGJEHOOCUyO+qgrT/6LlrDO8WBLbmplhh6Wdanf5Z3uvLrqFBngxeAGkLTG5u8BX49rvCgkcKYzUbvL60QNkKQ3OeFOs3JFxj3PJ36hqs6x8j8hRKvBwFpXtUr4QxZUy7QuvDa5zZvbb7QiWZZ6wckiiqhr9LqsdIXm6TzsXKYgTFHjhRyDQIZd9vPzlOrCYVOrc+ocdqvLpXDJFxAtoHNxu8hUemyVzNig="
-  file: 
-    - './_site/assets/pdf/cff-specifications-1.0.3.pdf'
+  file:
+  - "./_site/assets/pdf/cff-specifications-1.0.3.pdf"
   on:
     tags: true
+  api-key:
+    secure: TrWcLYkitJJABuRUefiaYDqUTtbwJFXKbf8FNectqqSux9YytK8DA6J8pAGOeXcx5pAwP/ehhjthlwvjeh4gNLTlRoLNaXZ5nk2vv7sQnMY8X2p6/3juFnl/R2pxb+OrsJ4YyH2RV+JxNz/IxQiEloLnSxuSLLeuvkQYIhWb+rM0wW7KtL7aOz0eNkq9p7aYoPTfOFmVtDraC/2dzw45UAktmvuYl/io4csH4hSXSyv9KA5qZigIYcud0QkFcdzZUYAXudTkL3K6uIO2pPIXhiCJs4IYNZmiztADmI/8kVXifoC7ooN1BSwmVyyVqNcVa90rMI5ok7PKFW7AOOGeR1wBBJYz+4VIp7MnSTzIkAZkXaWC1PDMrqNYBK6EWOUv9ctQjzJNWygVUembQdlAIDGhykhQx3Rdkn3s353SQrcUybwzU9sq/vv1H/NFxNYMEL9VDeZaPD5+UTcomDhzgkfkv5veE4yPaOjjFTZBGGIVMnM5Uu4uo0DKdsh0XxmdY9WUMV5VGtZBiRsNy7Yjm0ibE8E7Q/fyzkCcuHVk//mBNzM062EGKRGqFbd1/jJ7ASjKA3JPkmOmmL7Fhh4tk6oG9aEVkT8oMkV0HiTrTjyP3iuaR6b3cDZR5xfv7X6J0nkCaQEKYZ7EZF/JsxcHaAIGEjxWzQV2eb+G0fxm0VA=
