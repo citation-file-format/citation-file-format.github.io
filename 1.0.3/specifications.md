@@ -581,7 +581,6 @@ ambiguity/misuse.
 **`number`**
 
 - If the work is a conference paper: E.g., the submission number of the paper
-- If the work is an electronic article: E.g., the article identifier (example: *e147* in a [PeerJ electronic article](https://peerj.com/articles/cs-147/))
 - If the work is a grant: The grant number provided by the funding agency.
 - If the work is a work of art: E.g., the catalogue number provided by a museum holding the artwork.
 - If the work is a report: The report number of a report.
