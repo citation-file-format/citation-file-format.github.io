@@ -4,7 +4,7 @@ python:
   
 install:
   # Install a newer version of  Pandoc
-  - wget wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
+  - wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
   - sudo dpkg -i pandoc-2.7.3-1-amd64.deb
   - pandoc --version
   - sudo apt-get -f install
