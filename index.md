@@ -3,95 +3,82 @@
 
 {% include toc %}
 
-# Citation File Format (CFF)
+# What is a `CITATION.cff` file?
 
-Citation File Format is a human- and machine-readable file format in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html) which provides
-citation metadata for software. It is maintained openly on GitHub:
-<https://github.com/citation-file-format>.
+`CITATION.cff` files are plain text files with human- and machine-readable citation information for software.
+Code developers can include them in their repositories to let others know how to correctly cite their software.
 
-The current version is [{{ site.current }}](/{{ site.current }}/), for which there is a [detailed format specification](/{{ site.current }}/).
-
-## Example
-
-If you want to make your software easily citable, you can put a file called
-`CITATION.cff` in the root of your repository. This file should provide at least the
-minimally necessary metadata to cite your software. For example:
+A `CITATION.cff` file looks like this:
 
 {% highlight yaml %}
-cff-version: 1.0.3
+cff-version: 1.1.0
 message: If you use this software, please cite it as below.
 authors:
   - family-names: Druskat
     given-names: Stephan
     orcid: https://orcid.org/0000-0003-4925-7248
-title: My Research Tool
-version: 1.0.4
+title: "My Research Software"
+version: 2.0.4
 doi: 10.5281/zenodo.1234
 date-released: 2017-12-18
 {% endhighlight %}
 
-A CFF file can also be used to record much more information about your software. For
-an overview of what software metadata can be supplied with the
-Citation File Format, please see [the current version of the format specifications](/{{ site.current }}/).
+The format of `CITATION.cff` files is the **Citation File Format (CFF)**.
 
-## Tools
+# Why you should add a `CITATION.cff` file to your repository!
 
-There are a number of tools that can help you work with the Citation File Format to perform useful tasks: generate a `CITATION.cff` file from a [DOI](http://www.doi.org/), convert CFF files to formats required by reference management software', or validate `CITATION.cff` files. For further information, please see [the CFF GitHub repository](https://github.com/citation-file-format/citation-file-format#tools).
+It is very easy to *correctly* cite a paper: all the necessary information (*metadata*) can be found on the title page or the article website.
+Software has no title page, the relevant information is often less obvious.
 
-## Status
+People who want to cite your software may ask questions like:
 
-The spectrum of available concepts for software citation metadata files reaches
-from non-standardized `CITATION` files as suggested by Robin
-Wilson {% cite citation-files %}[^no-file-no-use] to full transitive credit encoded in JSON-LD
-{% cite transitive-credit-json-ld %}.
+What is the name of the software (given that it’s probably not `my_scripts/run.m` or `analysis.py`)?
+{: .notice--info}
 
-Along this spectrum, Citation File Format is located somewhere between these two extremes as it adds
-machine-readability and thus a greater re-use potential to `CITATION` files,
-but does not offer transitive credit capabilities (yet), or support for all
-citation use cases as outlined by {% cite principles --style ./_bibliography/apa-text.csl %}.
+What label should I use to uniquely identify the version of the software I have used?
+{: .notice--warning .text-right}
 
-Citation File Format aims at providing a practical solution, and human-friendly properties such
-as readability and writability, for the most common software citation use
-cases, i.e., *1. Use software for a paper*, *2. Use software in/with new software*,
-and *15. Store software entry* (cf. Table 2, {% cite principles --style ./_bibliography/apa-text.csl -l 6 %}).
+What is the appropriate set of people that should be identified as authors?
+{: .notice--success}
 
-The basic structure of Citation File Format (i.e., having a *message* and one or more
-*references*) explicitly reflects the structure of plain-text `CITATION` files
-and manifests its status as a compromise between what is currently *useful* and
-*usable*, and what is *desired* (fully transitive credit and attribution). As such, it has value both as a discrete format with everyday application and as a input format populating other citation formats.
 
-## Context
+The person who wants to cite your software will probably not be able to answer these questions accurately and consistently themselves, but you can!
+Give them all the right information in a `CITATION.cff` file, and they can cite your software correctly.
 
-Software citations enhance the dissemination of code, improve software sustainability and ensure authors receive credit for development work. The Citation File Format is an indirect outcome of the discussion group "DS3. Development and
-implementation of a standard format for CITATION files." at the [Workshop on
-Sustainable Software for Science: Practice and Experiences
-(WSSSPE5.1)](http://wssspe.researchcomputing.org.uk/wssspe5-1/) (6 September
-2017, Manchester, UK). The group discussed the potential and outlined
-requirements for a format for machine-readable CITATION files,
-and has authored a [blog post](https://software.ac.uk/blog/2017-12-12-standard-format-citation-files) on the subject,
-published on the [blog](http://software.ac.uk/blog/) of the [Software Sustainability
-Institute](http://software.ac.uk/).
+Also, if you publish your software in an archive or registry, they (or their systems) can re-use the citation metadata from your `CITATION.cff` file as well.
 
-Members of the group were:
+# Create a `CITATION.cff` file now!
 
-- Stephan Druskat (Humboldt-Universität zu Berlin, Germany), *Lead*
-- Neil Chue Hong (Software Sustainability Institute, University of Edinburgh, UK)
-- Raniere Silva (Software Sustainability Institute, University of Manchester, UK)
-- Radovan Bast (University of Tromsø, Norway)
-- Andrew Rowley (University of Manchester, UK)
-- Alexander Konovalov (University of St. Andrews, UK)
+You can start by copy-and-pasting the [example above](#what-is-a-citation-cff-file) into the root fo your code repository, and adapt the information to your software.
 
-One requirement for the [blog post](https://software.ac.uk/blog/2017-12-12-standard-format-citation-files) was to be able to make a concrete suggestion
-for a format for these machine-readable CITATION files, which triggered the
-development of Citation File Format.
+You can also use a simple website to fill in the citation information for your software.
+To do so, go to the [TODO `cffinit` website]().
 
-[^no-file-no-use]: Not providing a file with software citation metadata is not considered a valid option here.
+You can also learn more about the *Citation File Format (CFF)*, which is the format used for `CITATION.cff` files.
+It can do more than you can see in the example.
+To learn about the format, go to the [Citation File Format documentation](https://github.com/citation-file-format/citation-file-format/blob/master/README.md).
 
-## Contributing
+# Tools for working with `CITATION.cff` files
 
-Contributions to CFF are welcome! Please have a look at the 
-[guidelines for contributing](https://github.com/citation-file-format/citation-file-format/blob/master/CONTRIBUTING.md).
+Different tools exist to help you work with `CITATION.cff` files:
 
-# References
+- The **initializer** can help you create a `CITATION.cff` file from scratch: [TODO link].
+- The **validator** checks whether a `CITATION.cff` file is formatted correctly: [TODO link].
+- The **converter** can create a `CITATION.cff` file from existing metadata (e.g., from a *BibTeX* file), and convert it to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): [TODO link].
+- The **schema** defines *what* can go into a `CITATION.cff` file, and *how*: [TODO link].
 
-{% bibliography --cited %}
+There are further tools for specific use cases. Here are some examples:
+
+- The Maven CFF Plugin for Java projects built with Maven automatically creates a `CITATION.cff` draft from available metadata, including metadata for dependencies.
+
+# Events
+
+Community events are a great way to learn about the Citation File Format, and contribute to making the citation of (research) software easier!
+
+Past and upcoming events are listed on the [Events page](./events/).
+
+# Have an idea? Found a problem?
+
+If you can think of something that would make `CITATION.cff` files better? Or have you found something that didn't work as you would have expected?
+Please check out how you can share your idea or bug report in the [contribution guide on GitHub](https://github.com/citation-file-format/citation-file-format/blob/master/CONTRIBUTING.md).
+
