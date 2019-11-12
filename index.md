@@ -32,13 +32,13 @@ Software has no title page, the relevant information is often less obvious.
 
 People who want to cite your software may ask questions like:
 
-What is the name of the software (given that it’s probably not `my_scripts/run.m` or `analysis.py`)?
+<i class="fa fa-question-circle"></i> What is the name of the software (given that it’s probably not `my_scripts/run.m` or `analysis.py`)?
 {: .notice--info}
 
-What label should I use to uniquely identify the version of the software I have used?
+<i class="fa fa-question-circle"></i> What label should I use to uniquely identify the version of the software I have used?
 {: .notice--warning .text-right}
 
-What is the appropriate set of people that should be identified as authors?
+<i class="fa fa-question-circle"></i> What is the appropriate set of people that should be identified as authors?
 {: .notice--success}
 
 
