@@ -62,14 +62,17 @@ To learn about the format, go to the [Citation File Format documentation](https:
 
 Different tools exist to help you work with `CITATION.cff` files:
 
-- The **initializer** can help you create a `CITATION.cff` file from scratch: [TODO link].
+- The **initializer** can help you create a `CITATION.cff` file from scratch: <https://citation-file-format.github.io/cff-initializer-javascript/>.
 - The **validator** checks whether a `CITATION.cff` file is formatted correctly: [TODO link].
-- The **converter** can create a `CITATION.cff` file from existing metadata (e.g., from a *BibTeX* file), and convert it to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): [TODO link].
+- The **converter** can create a `CITATION.cff` file from existing metadata (e.g., from a *BibTeX* file), and convert it to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): <https://github.com/citation-file-format/cff-converter-python>.
 - The **schema** defines *what* can go into a `CITATION.cff` file, and *how*: [TODO link].
 
 There are further tools for specific use cases. Here are some examples:
 
-- The Maven CFF Plugin for Java projects built with Maven automatically creates a `CITATION.cff` draft from available metadata, including metadata for dependencies.
+- The *Maven CFF Plugin* for Java projects built with Maven automatically creates a `CITATION.cff` draft from available metadata, including metadata for dependencies.
+- *doi2cff* automatically creates a `CITATION.cff` file from a Zenodo DOI: <https://github.com/citation-file-format/doi2cff>.
+- *ruby-cff* manipulates `CITATION.cff` files in Ruby: <https://github.com/citation-file-format/ruby-cff>.
+- *cff-reader-java* is a Java library reading `CITATION.cff` files into a POJO model: <https://github.com/citation-file-format/cff-reader-java>.
 
 # Events
 
