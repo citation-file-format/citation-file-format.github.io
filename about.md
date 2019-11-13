@@ -13,18 +13,18 @@ citation metadata for software. It is maintained openly on GitHub: <i class="fa 
 
 The spectrum of available concepts for software citation metadata files reaches
 from non-standardized `CITATION` files as suggested by Robin
-Wilson {% cite citation-files %}[^no-file-no-use] to full transitive credit encoded in JSON-LD
-{% cite transitive-credit-json-ld %}.
+Wilson [1] to full transitive credit encoded in JSON-LD
+[2].
 
 Along this spectrum, Citation File Format is located somewhere between these two extremes as it adds
 machine-readability and thus a greater re-use potential to `CITATION` files,
 but does not offer transitive credit capabilities (yet), or support for all
-citation use cases as outlined by {% cite principles --style ./_bibliography/apa-text.csl %}.
+citation use cases as outlined by Smith et al. [3].
 
 Citation File Format aims at providing a practical solution, and human-friendly properties such
 as readability and writability, for the most common software citation use
 cases, i.e., *1. Use software for a paper*, *2. Use software in/with new software*,
-and *15. Store software entry* (cf. Table 2, {% cite principles --style ./_bibliography/apa-text.csl -l 6 %}).
+and *15. Store software entry* (cf. Table 2, [3], p. 6).
 
 The basic structure of Citation File Format (i.e., having a *message* and one or more
 *references*) explicitly reflects the structure of plain-text `CITATION` files
@@ -82,4 +82,8 @@ Contributions to CFF are welcome! Please have a look at the
 
 # References
 
-{% bibliography --cited %}
+[1] R. Wilson, “Encouraging citation of software–introducing CITATION files.” 2013 [Online]. Available: https://goo.gl/7gZuSY
+
+[2] D. S. Katz and A. M. Smith, “Transitive Credit and JSON-LD,” Journal of Open Research Software, vol. 3, no. 1, p. e7, Nov. 2015. 
+
+[3] A. M. Smith, D. S. Katz, K. E. Niemeyer, and FORCE11 Software Citation Working Group, “Software citation principles,” PeerJ Comput. Sci., vol. 2, no. e86, 2016 [Online]. Available: https://doi.org/10.7717/peerj-cs.86
