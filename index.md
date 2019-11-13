@@ -82,6 +82,8 @@ Past and upcoming events are listed on the [Events page](./events/).
 
 # Have an idea? Found a problem?
 
-If you can think of something that would make `CITATION.cff` files better? Or have you found something that didn't work as you would have expected?
+We try to make contributing to CFF as easy as possible! Even tweeting a problem may be helpful, it's *that* easy.
+
+Better still, if you can think of something that would make `CITATION.cff` files better, or you have found something that didn't work as you would have expected:
 Please check out how you can share your idea or bug report in the [contribution guide on GitHub](https://github.com/citation-file-format/citation-file-format/blob/master/CONTRIBUTING.md).
 
