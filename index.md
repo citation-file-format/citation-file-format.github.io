@@ -52,7 +52,7 @@ Also, if you publish your software in an archive or registry, they (or their sys
 You can start by copy-and-pasting the [example above](#what-is-a-citation-cff-file) into the root fo your code repository, and adapt the information to your software.
 
 You can also use a simple website to fill in the citation information for your software.
-To do so, go to the [TODO `cffinit` website]().
+To do so, go to the [`cffinit` website](https://citation-file-format.github.io/cff-initializer-javascript/).
 
 You can also learn more about the *Citation File Format (CFF)*, which is the format used for `CITATION.cff` files.
 It can do more than you can see in the example.
@@ -63,9 +63,9 @@ To learn about the format, go to the [Citation File Format documentation](https:
 Different tools exist to help you work with `CITATION.cff` files:
 
 - The **initializer** can help you create a `CITATION.cff` file from scratch: <https://citation-file-format.github.io/cff-initializer-javascript/>.
-- The **validator** checks whether a `CITATION.cff` file is formatted correctly: [TODO link].
+<!--- The **validator** checks whether a `CITATION.cff` file is formatted correctly: [TODO link].-->
 - The **converter** can create a `CITATION.cff` file from existing metadata (e.g., from a *BibTeX* file), and convert it to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): <https://github.com/citation-file-format/cff-converter-python>.
-- The **schema** ultimately defines *what* can go into a `CITATION.cff` file, and *how*: [TODO link].
+<!--- The **schema** ultimately defines *what* can go into a `CITATION.cff` file, and *how*: [TODO link].-->
 
 There are further tools for specific use cases. Here are some examples:
 
