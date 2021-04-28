@@ -12,7 +12,7 @@ A `CITATION.cff` file looks like this:
 
 {% highlight yaml %}
 cff-version: 1.1.0
-message: If you use this software, please cite it as below.
+message: "If you use this software, please cite it as below."
 authors:
   - family-names: Druskat
     given-names: Stephan
