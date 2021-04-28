@@ -13,3 +13,5 @@ Gemfile.lock
 node_modules
 npm-debug.log*
 cff-meta.md
+.jekyll-cache/
+vendor/
