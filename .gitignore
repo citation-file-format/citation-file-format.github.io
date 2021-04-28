@@ -14,3 +14,4 @@ node_modules
 npm-debug.log*
 cff-meta.md
 vendor/
+.jekyll-cache/
