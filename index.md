@@ -49,7 +49,7 @@ Also, if you publish your software in an archive or registry, they (or their sys
 
 # Create a `CITATION.cff` file now!
 
-You can start by copy-and-pasting the [example above](#what-is-a-citation-cff-file) into the root fo your code repository, and adapt the information to your software.
+You can start by copy-and-pasting the [example above](#what-is-a-citation-cff-file) into the root of your code repository, and adapt the information to your software.
 
 You can also use a simple website to fill in the citation information for your software.
 To do so, go to the [`cffinit` website](https://citation-file-format.github.io/cff-initializer-javascript/).
