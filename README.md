@@ -4,12 +4,9 @@
 
 This repository holds the sources for <https://citation-file-format.github.io/>.
 
-
-## Build locally
-
 The site is built with the [Jekyll](https://jekyllrb.com/) static site generator and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
-### With `docker`
+## Build locally, with `docker`
 
 If you have docker installed, just run
 
@@ -20,7 +17,7 @@ docker run --rm --volume="$PWD:/srv/jekyll" --env JEKYLL_ENV=development -p 4000
 then open your browser to [`http://localhost:4000`](http://localhost:4000).
 
 
-### On your own installation
+## Build locally, on your own system
 
 ```shell
 # Make sure Ruby version >2.5 is installed
