@@ -5,19 +5,43 @@
 This repository holds the sources for <https://citation-file-format.github.io/>.
 
 
-## Build
+## Build locally
 
-The site is built with the [Jekyll]() static site generator and the [Minimal Mistakes]() theme.
+The site is built with the [Jekyll](https://jekyllrb.com/) static site generator and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
-To build locally, you will have to have [Ruby]() and the Ruby bundler installed, and run the following commands from the root of the repository.
+### With `docker`
 
-```ruby
-bundle install
+If you have docker installed, just run
+
+```shell
+docker run --rm --volume="$PWD:/srv/jekyll" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:4.0 jekyll serve
+```
+
+then open your browser to [`http://localhost:4000`](http://localhost:4000).
+
+
+### On your own installation
+
+```shell
+# Make sure Ruby version >2.5 is installed
+ruby --version
+
+# Make sure you have the `gem` binary
+gem --version
+
+# Install jekyll and bundler dependencies
+sudo gem install jekyll:4.2.0 bundler:2.2.24
+
+# install dependencies
+# note: https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+bundle config set --local path 'vendor/bundle'
+bundle install # ignore the CertificateFailureError ?
+
 bundle exec jekyll serve -w
 ```
 
-This will serve the site on <http://127.0.0.1:4000>, and changes to Markdown sources will be hot-patched.
+This will serve the site on <http://localhost:4000>, and changes to Markdown sources will be hot-patched.
 
 ## Deploy
 
-Changes are automatically deployed when `master` is pushed to via GitHub Pages.
+`master` branch is deployed on GitHub Pages.
