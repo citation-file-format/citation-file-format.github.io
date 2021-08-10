@@ -41,4 +41,4 @@ This will serve the site on <http://localhost:4000>, and changes to Markdown sou
 
 ## Deploy
 
-`master` branch is deployed on GitHub Pages.
+`main` branch is deployed on GitHub Pages.
