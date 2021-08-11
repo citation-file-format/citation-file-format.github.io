@@ -1,7 +1,7 @@
 ---
 ---
 
-<!--{% include toc %}-->
+{% include toc %}
 
 # What is a `CITATION.cff` file?
 
@@ -28,11 +28,11 @@ The format of `CITATION.cff` files is the **Citation File Format (CFF)**.
 # Why you should add a `CITATION.cff` file to your repository!
 
 It is very easy to *correctly* cite a paper: all the necessary information (*metadata*) can be found on the title page or the article website.
-Software has no title page, the relevant information is often less obvious.
+Software and datasets have no title page, the relevant information is often less obvious.
 
 People who want to cite your software may ask questions like:
 
-<i class="fa fa-question-circle"></i> What is the name of the software (given that it’s probably not `my_scripts/run.m` or `analysis.py`)?
+<i class="fa fa-question-circle"></i> What is the name of the software (it’s probably not `my_scripts/run.m` or `analysis.py`)?
 {: .notice--info}
 
 <i class="fa fa-question-circle"></i> What label should I use to uniquely identify the version of the software I have used?
@@ -41,11 +41,32 @@ People who want to cite your software may ask questions like:
 <i class="fa fa-question-circle"></i> What is the appropriate set of people that should be cited as authors?
 {: .notice--success}
 
-
 The person who wants to cite your software will probably not be able to answer these questions accurately and consistently themselves, but you can!
 Give them all the right information in a `CITATION.cff` file, and they can cite your software *correctly*.
 
 Also, if you publish your software in an archive or registry, they (or their systems) can re-use the citation metadata from your `CITATION.cff` file.
+
+## <i class="fa fa-github"></i> Supported by GitHub!
+
+When you put a `CITATION.cff` file in the default branch of your GitHub repository, it is automatically linked from the repository landing page,
+and the citation information is rendered on the repository page, and also provided as BibTeX snippet which users can simply copy! 
+This makes it easy for other users to cite your software project, using the information you've provided. 
+[Read more ...](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files)
+
+## <i class="icon-zenodo"></i> Supported by Zenodo!
+
+When you have a `CITATION.cff` file in your GitHub repository, make a release and publish it on Zenodo via the Zenodo-GitHub integration, 
+Zenodo will use the citation information you've provided to populate the publication entry! 
+This makes it easier for software developers and maintainers to publish their software with complete and correct metadata. 
+[Read the announcement ...](https://twitter.com/ZENODO_ORG/status/1420357001490706442)
+
+## <i class="icon-zotero"></i> Supported by Zotero!
+
+When you have a `CITATION.cff` file in your repository, and someone uses the Zotero browser plugin to import a reference to your repository 
+into their Zotero reference manager, it will use the citation information you've provided to populate the reference entry! 
+This makes it easier for users to get a complete and correct reference to your software,
+that they can use when they cite your software in their work!
+[Read the announcement ...](https://twitter.com/zotero/status/1420515377390530560)
 
 # Create a `CITATION.cff` file now!
 
