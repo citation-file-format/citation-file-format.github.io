@@ -1,17 +1,17 @@
 ---
 ---
 
-{% include toc %}
+<!--{% include toc %}-->
 
 # What is a `CITATION.cff` file?
 
-`CITATION.cff` files are plain text files with human- and machine-readable citation information for software.
-Code developers can include them in their repositories to let others know how to correctly cite their software.
+`CITATION.cff` files are plain text files with human- and machine-readable citation information for software (and datasets).
+Code developers can include them in their repositories to let others know how to correctly cite their work.
 
-A `CITATION.cff` file looks like this:
+This is an example of a simple `CITATION.cff` file:
 
 {% highlight yaml %}
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
   - family-names: Druskat
@@ -20,10 +20,18 @@ authors:
 title: "My Research Software"
 version: 2.0.4
 doi: 10.5281/zenodo.1234
-date-released: 2017-12-18
+date-released: 2021-08-11
 {% endhighlight %}
 
 The format of `CITATION.cff` files is the **Citation File Format (CFF)**.
+
+To get started with the Citation File Format, have a look at the [documentation](https://github.com/citation-file-format/citation-file-format/blob/main/README.md).
+
+The Citation File Format is much more powerful than the minimal example above suggests. 
+It also allows you to record the *references* for your software, for example, 
+to make visible the work that your own work builds on.
+To find out what citation-relevant information you can provide in `CITATION.cff` files,
+have a look at the [guide to the Citation File Format](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md).
 
 # Why you should add a `CITATION.cff` file to your repository!
 
