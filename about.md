@@ -1,9 +1,8 @@
 ---
+title: Citation File Format (CFF) - About
 ---
 
 {% include toc %}
-
-# Citation File Format (CFF)
 
 Citation File Format is a human- and machine-readable file format in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html) which provides
 citation metadata for software. It is maintained openly on GitHub: <i class="fa fa-github"></i> 
@@ -85,3 +84,42 @@ Contributions to CFF are welcome! Please have a look at the
 [2] D. S. Katz and A. M. Smith, “Transitive Credit and JSON-LD,” Journal of Open Research Software, vol. 3, no. 1, p. e7, Nov. 2015. 
 
 [3] A. M. Smith, D. S. Katz, K. E. Niemeyer, and FORCE11 Software Citation Working Group, “Software citation principles,” PeerJ Comput. Sci., vol. 2, no. e86, 2016 [Online]. Available: https://doi.org/10.7717/peerj-cs.86
+
+## Timeline
+
+<div class="timeline">
+  <div class="timelinecontainer timelineright">
+    <div class="timelinecontent">
+      <h2 class="timelineheader">2021</h2>
+      CFF 1.2.0 released (<a href="https://doi.org/10.5281/zenodo.5171937">doi:10.5281/zenodo.5171937</a>)<br><br>
+      CFF 1.1.0 released (<a href="https://doi.org/10.5281/zenodo.4813122">doi:10.5281/zenodo.4813122</a>)
+    </div>
+  </div>
+  <div class="timelinecontainer timelineleft">
+    <div class="timelinecontent">
+      <h2 class="timelineheader">2020</h2>
+      Registries workshop
+    </div>
+  </div>
+  <div class="timelinecontainer timelineright">
+    <div class="timelinecontent">
+      <h2 class="timelineheader">2019</h2>
+      RSE Hackathon?
+      CW Hack thing
+    </div>
+  </div>
+  <div class="timelinecontainer timelineleft">
+    <div class="timelinecontent">
+      <h2 class="timelineheader">2018</h2>
+      CFF 1.0.3 released (<a href="https://doi.org/10.5281/zenodo.1120389">doi:10.5281/zenodo.1120389</a>)
+    </div>
+  </div>
+  <div class="timelinecontainer timelineright">
+    <div class="timelinecontent">
+      <h2 class="timelineheader">2017: Initiation</h2>
+      <a href="http://wssspe.researchcomputing.org.uk/wssspe5-1/">WSSSPE5.1 workshop</a> lightning talk: "<a href="https://doi.org/10.6084/m9.figshare.3827058.v4">Should <code>CITATION</code> Files Be Standardized?"</a> & 
+      discussion group (blog post <a href="https://software.ac.uk/blog/2017-12-12-standard-format-citation-files">"A standard format for CITATION files"</a>)<br><br>
+      CFF 1.0.0 released (<a href="https://doi.org/10.5281/zenodo.1108269">doi:10.5281/zenodo.1108269</a>)
+    </div>
+  </div>
+</div>
