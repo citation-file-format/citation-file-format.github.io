@@ -13,14 +13,11 @@ that `CITATION.cff` files can be validated against.
 If you use `docker`, you can validate your `CITATION.cff` file as follows.
 
 1. Build the docker container:
-
 ```bash
 docker build -t cffvalidator \
-https://raw.githubusercontent.com/sdruskat/simple-cff-validator-docker/1.0.0/Dockerfile
+https://raw.githubusercontent.com/sdruskat/cff-validator-docker/1.0.0/Dockerfile
 ```
-
 2. Run the container. Note that you have supply the absolute path to the local `CITATION.cff` file you want to validate with `-v`:
-
 ```bash
 docker run --rm -v </absolute/path/to/your/CITATION.cff>:/cff/CITATION.cff cffvalidator
 ```
