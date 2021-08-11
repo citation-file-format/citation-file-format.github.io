@@ -11,11 +11,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('#{$fa-font-path}/icomoon.eot?406v0y');
-    src:  url('#{$fa-font-path}/icomoon.eot?406v0y#iefix') format('embedded-opentype'),
-      url('#{$fa-font-path}/icomoon.ttf?406v0y') format('truetype'),
-      url('#{$fa-font-path}/icomoon.woff?406v0y') format('woff'),
-      url('#{$fa-font-path}/icomoon.svg?406v0y#icomoon') format('svg');
+    src:  url('#{$fa-font-path}/icomoon.eot?crim0q');
+    src:  url('#{$fa-font-path}/icomoon.eot?crim0q#iefix') format('embedded-opentype'),
+      url('#{$fa-font-path}/icomoon.ttf?crim0q') format('truetype'),
+      url('#{$fa-font-path}/icomoon.woff?crim0q') format('woff'),
+      url('#{$fa-font-path}/icomoon.svg?crim0q#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -36,9 +36,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .icon-zenodo:before {
-    content: "\e901";
-  }
   .icon-zotero:before {
     content: "\e900";
+  }
+  .icon-zenodo:before {
+    content: "\e901";
   }

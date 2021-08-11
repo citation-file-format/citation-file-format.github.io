@@ -46,26 +46,26 @@ Give them all the right information in a `CITATION.cff` file, and they can cite 
 
 Also, if you publish your software in an archive or registry, they (or their systems) can re-use the citation metadata from your `CITATION.cff` file.
 
-## <i class="fa fa-github"></i> Supported by GitHub!
+## Supported by GitHub <i class="fa fa-github"></i>
 
-When you put a `CITATION.cff` file in the default branch of your GitHub repository, it is automatically linked from the repository landing page,
+![image-left](/assets/images/github.png){: .align-left} When you put a `CITATION.cff` file in the default branch of your GitHub repository, it is automatically linked from the repository landing page,
 and the citation information is rendered on the repository page, and also provided as BibTeX snippet which users can simply copy! 
-This makes it easy for other users to cite your software project, using the information you've provided. 
+This makes it easy for other users to cite your software project, using the information you've provided.  
 [Read more ...](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files)
 
-## <i class="icon-zenodo"></i> Supported by Zenodo!
+## Supported by Zenodo <i class="icon-zenodo"></i>
 
-When you have a `CITATION.cff` file in your GitHub repository, make a release and publish it on Zenodo via the Zenodo-GitHub integration, 
+![image-left](/assets/images/zenodo.svg){: .align-left} When you have a `CITATION.cff` file in your GitHub repository, make a release and publish it on Zenodo via the Zenodo-GitHub integration, 
 Zenodo will use the citation information you've provided to populate the publication entry! 
-This makes it easier for software developers and maintainers to publish their software with complete and correct metadata. 
+This makes it easier for software developers and maintainers to publish their software with complete and correct metadata.  
 [Read the announcement ...](https://twitter.com/ZENODO_ORG/status/1420357001490706442)
 
-## <i class="icon-zotero"></i> Supported by Zotero!
+## Supported by Zotero <i class="icon-zotero"></i>
 
-When you have a `CITATION.cff` file in your repository, and someone uses the Zotero browser plugin to import a reference to your repository 
+![image-left](/assets/images/zotero.png){: .align-left} When you have a `CITATION.cff` file in your repository, and someone uses the Zotero browser plugin to import a reference to your repository 
 into their Zotero reference manager, it will use the citation information you've provided to populate the reference entry! 
 This makes it easier for users to get a complete and correct reference to your software,
-that they can use when they cite your software in their work!
+that they can use when they cite your software in their work!  
 [Read the announcement ...](https://twitter.com/zotero/status/1420515377390530560)
 
 # Create a `CITATION.cff` file now!
@@ -75,7 +75,7 @@ You can start by copy-and-pasting the [example above](#what-is-a-citation-cff-fi
 You can also use a simple website to fill in the citation information for your software.
 To do so, go to the [`cffinit` website](https://citation-file-format.github.io/cff-initializer-javascript/).
 
-To get started with the Citation File Format, have a look at the [documentation](https://github.com/citation-file-format/citation-file-format/blob/main/README.md).
+To learn more about how to work with the Citation File Format, have a look at the [documentation](https://github.com/citation-file-format/citation-file-format/blob/main/README.md).
 
 The Citation File Format is much more powerful than the minimal example above suggests. 
 It also allows you to record the *references* for your software, for example, 
