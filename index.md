@@ -87,3 +87,15 @@ We try to make contributing to CFF as easy as possible! Even tweeting a problem 
 Better still, if you can think of something that would make `CITATION.cff` files better, or you have found something that didn't work as you would have expected:
 Please check out how you can share your idea or bug report in the [contribution guide on GitHub](https://github.com/citation-file-format/citation-file-format/blob/master/CONTRIBUTING.md).
 
+{% capture acknowledgments %}
+#### Acknowledgments
+
+We would like to thank the following institutions for supporting the development of the Citation File Format:
+
+- The [Institute for Software Technology](https://www.dlr.de/sc/en/desktopdefault.aspx/) of the [German Aerospace Center (DLR)](https://www.dlr.de/en/)
+- The [Netherlands eScience Center](https://www.esciencecenter.nl/)
+- The [Software Sustainability Institute](https://software.ac.uk/)
+{% endcapture %}
+
+<div class="notice">{{ acknowledgments | markdownify }}</div>
+
