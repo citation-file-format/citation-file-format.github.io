@@ -5,7 +5,7 @@
 
 # What is a `CITATION.cff` file?
 
-`CITATION.cff` files are plain text files with human- and machine-readable citation information for software.
+`CITATION.cff` files are plain text files with human- and machine-readable citation information for software (and datasets).
 Code developers can include them in their repositories to let others know how to correctly cite their software.
 
 This is an example of a simple `CITATION.cff` file:
@@ -46,8 +46,6 @@ The person who wants to cite your software will probably not be able to answer t
 Give them all the right information in a `CITATION.cff` file, and they can cite your software *correctly*.
 
 Also, if you publish your software in an archive or registry, they (or their systems) can re-use the citation metadata from your `CITATION.cff` file.
-
-File in the Citation File Format can also be used to provide citation information for datasets, by the way.
 
 # Create a `CITATION.cff` file now!
 
