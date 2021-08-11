@@ -19,7 +19,8 @@ https://raw.githubusercontent.com/sdruskat/cff-validator-docker/1.0.0/Dockerfile
 ```
 2. Run the container. Note that you have supply the absolute path to the local `CITATION.cff` file you want to validate with `-v`:
 ```bash
-docker run --rm -v </absolute/path/to/your/CITATION.cff>:/cff/CITATION.cff cffvalidator
+docker run --rm \
+-v </absolute/path/to/your/CITATION.cff>:/cff/CITATION.cff cffvalidator
 ```
 
 ### Python 3
