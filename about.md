@@ -4,9 +4,19 @@ title: Citation File Format (CFF) - About
 
 {% include toc %}
 
-Citation File Format is a human- and machine-readable file format in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html) which provides
+# Intro
+
+The Citation File Format is a human- and machine-readable file format in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html) which provides
 citation metadata for software. It is maintained openly on GitHub: <i class="fa fa-github"></i> 
 <https://github.com/citation-file-format/citation-file-format>.
+
+# Rationale
+
+# Community governance
+
+## Steering committee
+
+# History timeline
 
 ## Status
 
@@ -85,7 +95,7 @@ Contributions to CFF are welcome! Please have a look at the
 
 [3] A. M. Smith, D. S. Katz, K. E. Niemeyer, and FORCE11 Software Citation Working Group, “Software citation principles,” PeerJ Comput. Sci., vol. 2, no. e86, 2016 [Online]. Available: https://doi.org/10.7717/peerj-cs.86
 
-## Timeline
+# Timeline
 
 <!-- Capture Markdown content for reuse in timeline HTML -->
 <!-- Note: capture names cannot be just year ints -->
