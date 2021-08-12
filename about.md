@@ -87,39 +87,57 @@ Contributions to CFF are welcome! Please have a look at the
 
 ## Timeline
 
+<!-- Capture Markdown content for reuse in timeline HTML -->
+<!-- Note: capture names cannot be just year ints -->
+{% capture content2021 %}
+## 2021
+{: .timelineheader}
+- CFF 1.2.0 released (doi:[10.5281/zenodo.5171937](https://doi.org/10.5281/zenodo.5171937))
+- CFF 1.1.0 released (doi:[10.5281/zenodo.4813122](https://doi.org/10.5281/zenodo.4813122))
+{% endcapture %}
+
+{% capture content2020 %}
+## 2020
+{: .timelineheader}
+Registries workshop
+{% endcapture %}
+
+{% capture content2019 %}
+## 2019
+{: .timelineheader}
+RSE Hackathon?
+      CW Hack thing
+{% endcapture %}
+
+{% capture content2018 %}
+## 2018
+{: .timelineheader}
+CFF 1.0.3 released (doi:[10.5281/zenodo.1120389](https://doi.org/10.5281/zenodo.1120389))
+{% endcapture %}
+
+{% capture content2017 %}
+## 2017: Initiation
+{: .timelineheader}
+- [WSSSPE5.1](http://wssspe.researchcomputing.org.uk/wssspe5-1/) workshop:
+  - Lightning talk "Should `CITATION` files be standardized?" (doi:[10.6084/m9.figshare.3827058.v4](https://doi.org/10.6084/m9.figshare.3827058.v4))
+  - Discussion group & blog post "A standard format for CITATION files" ([link](https://software.ac.uk/blog/2017-12-12-standard-format-citation-files))
+- CFF 1.0.0 released (doi:[10.5281/zenodo.1108269](https://doi.org/10.5281/zenodo.1108269))
+{% endcapture %}
+
 <div class="timeline">
   <div class="timelinecontainer timelineright">
-    <div class="timelinecontent">
-      <h2 class="timelineheader">2021</h2>
-      CFF 1.2.0 released (<a href="https://doi.org/10.5281/zenodo.5171937">doi:10.5281/zenodo.5171937</a>)<br><br>
-      CFF 1.1.0 released (<a href="https://doi.org/10.5281/zenodo.4813122">doi:10.5281/zenodo.4813122</a>)
-    </div>
+    <div class="timelinecontent">{{ content2021 | markdownify }}</div>
   </div>
   <div class="timelinecontainer timelineleft">
-    <div class="timelinecontent">
-      <h2 class="timelineheader">2020</h2>
-      Registries workshop
-    </div>
+    <div class="timelinecontent">{{ content2020 | markdownify }}</div>
   </div>
   <div class="timelinecontainer timelineright">
-    <div class="timelinecontent">
-      <h2 class="timelineheader">2019</h2>
-      RSE Hackathon?
-      CW Hack thing
-    </div>
+    <div class="timelinecontent">{{ content2019 | markdownify }}</div>
   </div>
   <div class="timelinecontainer timelineleft">
-    <div class="timelinecontent">
-      <h2 class="timelineheader">2018</h2>
-      CFF 1.0.3 released (<a href="https://doi.org/10.5281/zenodo.1120389">doi:10.5281/zenodo.1120389</a>)
-    </div>
+    <div class="timelinecontent">{{ content2018 | markdownify }}</div>
   </div>
   <div class="timelinecontainer timelineright">
-    <div class="timelinecontent">
-      <h2 class="timelineheader">2017: Initiation</h2>
-      <a href="http://wssspe.researchcomputing.org.uk/wssspe5-1/">WSSSPE5.1 workshop</a> lightning talk: "<a href="https://doi.org/10.6084/m9.figshare.3827058.v4">Should <code>CITATION</code> Files Be Standardized?"</a> & 
-      discussion group (blog post <a href="https://software.ac.uk/blog/2017-12-12-standard-format-citation-files">"A standard format for CITATION files"</a>)<br><br>
-      CFF 1.0.0 released (<a href="https://doi.org/10.5281/zenodo.1108269">doi:10.5281/zenodo.1108269</a>)
-    </div>
+    <div class="timelinecontent">{{ content2017 | markdownify }}</div>
   </div>
 </div>

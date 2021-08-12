@@ -99,6 +99,11 @@
     background-color: $lighter-gray;
     position: relative;
     border-radius: 6px;
+    font-size: $type-size-8;
+  }
+
+  .timelinecontent ul {
+    padding-left: 1em;
   }
 
   h2.timelineheader {
