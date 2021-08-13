@@ -127,7 +127,7 @@ a `CITATION.cff` file can contain a "preferred citation" that may point to a sof
 
 Finally, the Citation File Format does not represent an optimal, all-purpose solution for software citation,
 and does not aim to address all challenges across all complexity layers of software citation.
-What it can do, however, is **make software citation a bit easier and a bit better right now**:
+What it *can* do is **make software citation a bit easier and a bit better right now**:
 
 - If you want to **make your software citable**, create a `CITATION.cff` file and put it wherever your source code lives (you can even ship it to your users together with the product itself).
 - If you want to **cite software**, look for its `CITATION.cff` file and cite the software using the metadata from the file.
