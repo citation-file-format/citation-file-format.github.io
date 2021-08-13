@@ -22,10 +22,8 @@ The Citation File Format is maintained openly on GitHub: <i class="fa fa-github"
 ### Why software citation?
 
 {% capture tldr-1 %}
-#### TL;DR
-{: .no_toc}
 - Software citation is Good Scientific Practice.
-- Software citation enables reproduction and quality assurance.
+- Software citation enables reproducibility and quality assurance.
 - Software citation gives academic credit to software authors, who may rely on it.
 {% endcapture %}
 
@@ -59,8 +57,6 @@ Therefore, research software should be cited.
 ### Why citation files?
 
 {% capture tldr-2 %}
-#### TL;DR
-{: .no_toc}
 - Software citation metadata must be provided by the software authors.
 - Software citation metadata must include software-specific information.
 {% endcapture %}
@@ -81,15 +77,62 @@ The only people that can provide the correct and complete citation metadata for 
 A good way for them to do this, is to provide a file with their source code that contains the respective metadata,
 for example a `CITATION.cff` file in the Citation File Format.
 
-### Why the Citation File Format?
+### Why the Citation File Format (CFF)?
 
-The Citation File Format
+{% capture tldr-3 %}
+- Software citation metadata should be readable by humans *and* machines.
+- Software citation metadata files should be unambiguously identifiable as such.
+- Software citation metadata files should do one thing, and do it well.
+- The Citation File Format improves software citation, **now**.
+{% endcapture %}
 
+<div class="notice--small">{{ tldr-3 | markdownify }}</div>
 
-2. Rationale for CFF 
-  1. and its signle-mindedness & implementation details
-  2. as opposed to otherformats
+Software release and publication workflows as well as
+citation workflows using reference managers are increasingly automated.
+While unstructured, plain text `CITATION` files may
+contain the correct citation information for software,
+and help their human readers cite software correctly,
+machines cannot reliably make use of them.
 
+<!-- TODO (height: 131px) ![The Citation File Format logo](/assets/images/cff-logo.png){: .align-left} -->
+The Citation File Format (CFF) [was initiated](#2017-initiation) to make `CITATION` files machine-readable 
+but also keep them comprehensible for humans.
+CFF's implementation language, 
+the "human friendly data serialization standard" [YAML](http://yaml.org/), 
+makes this possible.
+
+The format is called the "Citation File Format",
+and requires files in the format to be named `CITATION.cff`,
+to avoid ambiguity with regard to the purpose of format and files alike.
+This way, both humans and machines (or the software that runs on them)
+can be reasonably confident that they are dealing with files containing software citation metadata
+whenever they encounter `CITATION.cff` files.
+For human readers, there is additionally a required `message` field in `CITATION.cff` files,
+that contains information about what they are looking at, and what to do with the contents of the file
+(the default value for the `message` field is "*If you use this software, please cite it using the metadata from this file.*").
+
+The single-purposeness of CFF - following the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) -
+also sets it apart from other metadata formats, 
+such as [BibTeX](http://tug.org/bibtex/) (which covers citation metadata regardless of different existing output types and their requirements) 
+and [CodeMeta](https://codemeta.github.io/) (which covers general software metadata, including - but not exclusive to - software citation metadata).
+Only caring about one thing also means that the Citation File Format aims to do this one thing - software citation - well:
+Not only does it provide the necessary fields to enable the citation of software in other works,
+it also allows users to let their software cite its own references, 
+such as software dependencies and other works the software builds on.
+In this way it enables not only good scientific practice and adherence to the [Software Citation Principles](https://doi.org/10.7717/peerj-cs.86),
+it also makes it possible to build [citation graphs that include software that would otherwise remain hidden](https://doi.org/10.1109/MCSE.2019.2952840) from its academic users.
+Additionally, it caters to the needs of its creators, who may rely on credit for more traditional research outputs than software:
+a `CITATION.cff` file can contain a "preferred citation" that may point to a software paper or a traditional paper about the software.
+
+Finally, the Citation File Format does not represent an optimal, all-purpose solution for software citation,
+and does not aim to address all challenges across all complexity layers of software citation.
+What it can do, however, is **make software citation a bit easier and a bit better right now**:
+
+- If you want to **make your software citable**, create a `CITATION.cff` file and put it wherever your source code lives (you can even ship it to your users together with the product itself).
+- If you want to **cite software**, look for its `CITATION.cff` file and cite the software using the metadata from the file.
+- If you want to **process software citation metadata**, use `CITATION.cff` files 
+and the [Citation File Format schema](https://github.com/citation-file-format/citation-file-format/) to create, edit, convert and validate software citation metadata.
 
 ## Community governance
 
@@ -100,6 +143,10 @@ Plans
 ### Steering committee
 
 ## History timeline
+
+## FAQ
+
+- Address GitHub integration issues
 
 ## Status
 
