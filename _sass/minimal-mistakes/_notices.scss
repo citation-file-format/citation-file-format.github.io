@@ -10,12 +10,14 @@
  *  </div>
  */
 
-@mixin notice($notice-color) {
+@mixin notice($notice-color, $text-size) {
   margin: 2em 0 !important;  /* override*/
   padding: 1em;
   color: $dark-gray;
   font-family: $global-font-family;
-  /*font-size: $type-size-6 !important;*/
+  @if $text-size != null {
+    font-size: $text-size !important;
+  }
   text-indent: initial; /* override*/
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
@@ -66,35 +68,41 @@
 /* Default notice */
 
 .notice {
-  @include notice($light-gray);
+  @include notice($light-gray, null);
 }
 
 /* Primary notice */
 
 .notice--primary {
-  @include notice($primary-color);
+  @include notice($primary-color, null);
 }
 
 /* Info notice */
 
 .notice--info {
-  @include notice($info-color);
+  @include notice($info-color, null);
 }
 
 /* Warning notice */
 
 .notice--warning {
-  @include notice($warning-color);
+  @include notice($warning-color, null);
 }
 
 /* Success notice */
 
 .notice--success {
-  @include notice($success-color);
+  @include notice($success-color, null);
 }
 
 /* Danger notice */
 
 .notice--danger {
-  @include notice($danger-color);
+  @include notice($danger-color, null);
+}
+
+/* Small notices (original font-size from template was removed in notice class) */
+
+.notice--small {
+  @include notice($light-gray, $type-size-6);
 }
