@@ -4,15 +4,62 @@ title: Citation File Format (CFF) - About
 
 {% include toc %}
 
-# Intro
-
 The Citation File Format is a human- and machine-readable file format in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html) which provides
-citation metadata for software. It is maintained openly on GitHub: <i class="fa fa-github"></i> 
+citation metadata for software (and datasets). 
+
+Since its [inception in 2017](#2017-initiation), it has been developed as a community format within the 
+international research software sustainability,
+research software engineering, 
+and scholarly communications communities.
+
+The Citation File Format is maintained openly on GitHub: <i class="fa fa-github"></i> 
 <https://github.com/citation-file-format/citation-file-format>.
 
 # Rationale
 
+> Citations have several important purposes: to **uphold intellectual honesty** (or avoiding plagiarism), to **attribute** prior or unoriginal work and ideas to the correct sources, to allow the reader to **determine independently** whether the referenced material supports the author's argument in the claimed way, and to help the reader **gauge the strength and validity** of the material the author has used. (Source: [Citation - Wikipedia](https://en.wikipedia.org/w/index.php?title=Citation&oldid=1038525167))
+
+## Why software citation?
+
+Research isn't conducted in a vacuum, it builds on prior work.
+To **uphold their intellectual honesty**, researchers are required to cite the prior work their research builds on.
+Modern research very often builds on software, which is used to collect, create, process, analyze and visualize research data, or to simulate complex scenarios for example.
+Therefore, research software should be cited.
+
+Research software constitutes an important and valid research output in itself.
+The people that develop and maintain this software often work in academia, 
+and may be evaluated, hired, and promoted partly based on citations to their work.
+When researchers use software in their work 
+and **attribute** this software to their creators through citation, 
+they provide academic credit to the developers and maintainers
+who may rely on it for their careers.
+Also, attribution provides links between academic works, 
+and helps us understand the history and provenance of an academic work,
+of which software may be an important part.
+Therefore, research software should be cited.
+
+If someone wants to **determine independently** whether the argument or research results presented in an academic work are correct and should be treated as scientific knowledge,
+they need access to all material underpinning the work, so that they can reproduce the results.
+They also need access to the material if they want to **gauge its strength and validity**.
+Access to the material that has been used in research is provided through citations, 
+and in any computational research the material typically includes software.
+Therefore, research software should be cited.
+
+## Why the Citation File Format?
+
+1. General rationale
+  1. provide citation info
+  2. CITATION files
+2. Rationale for CFF 
+  1. and its signle-mindedness & implementation details
+  2. as opposed to otherformats
+
+
 # Community governance
+
+State now
+Community input
+Plans
 
 ## Steering committee
 
