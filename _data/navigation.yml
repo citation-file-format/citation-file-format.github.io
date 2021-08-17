@@ -8,4 +8,5 @@ main:
     url: /events/
   - title: '<i class="fa fa-file-text"></i> Documentation'
     url: https://github.com/citation-file-format/citation-file-format/blob/master/README.md
-
+  - title: '<i class="fa fa-graduation-cap"></i> Tutorials'
+    url: /tutorials/
