@@ -89,7 +89,7 @@ Different tools exist to help you work with `CITATION.cff` files:
 
 - The **initializer** can help you create a `CITATION.cff` file from scratch: <https://citation-file-format.github.io/cff-initializer-javascript/>.
 <!--- The **validator** checks whether a `CITATION.cff` file is formatted correctly: [TODO link].-->
-- The **converter** can convert a `CITATION.cff` to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): <https://github.com/citation-file-format/cff-converter-python>.
+- The **converter** can convert a `CITATION.cff` (of version 1.0.1, 1.0.2, 1.0.3 or 1.1.0) to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): <https://github.com/citation-file-format/cff-converter-python>.
 
 There are further tools for specific use cases, and different environments.
 The documentation has a brief [overview of available tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
