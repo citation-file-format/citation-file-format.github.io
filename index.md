@@ -99,7 +99,7 @@ The documentation has a brief [overview of available tools](https://github.com/c
 We try to make contributing to CFF as easy as possible! Even tweeting a problem may be helpful, it's *that* easy.
 
 Better still, if you can think of something that would make `CITATION.cff` files better, or you have found something that didn't work as you would have expected:
-Please check out how you can share your idea or bug report in the [contribution guide on GitHub](https://github.com/citation-file-format/citation-file-format/blob/master/CONTRIBUTING.md).
+Please check out how you can share your idea or bug report in the [contribution guide on GitHub](https://github.com/citation-file-format/citation-file-format/blob/main/CONTRIBUTING.md).
 
 {% capture acknowledgments %}
 #### Acknowledgments

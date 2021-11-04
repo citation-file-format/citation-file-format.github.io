@@ -76,7 +76,7 @@ Older versions for CFF are listed in the following table.
 ## Contributing
 
 Contributions to CFF are welcome! Please have a look at the 
-[guidelines for contributing](https://github.com/citation-file-format/citation-file-format/blob/master/CONTRIBUTING.md).
+[guidelines for contributing](https://github.com/citation-file-format/citation-file-format/blob/main/CONTRIBUTING.md).
 
 # References
 
