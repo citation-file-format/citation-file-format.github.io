@@ -70,10 +70,10 @@ that they can use when they cite your software in their work!
 
 # Create a `CITATION.cff` file now!
 
-You can start by copy-and-pasting the [example above](#what-is-a-citation-cff-file) into the root of your code repository, and adapt the information to your software.
+There are different options for getting started with the Citation File Format:
 
-You can also use a simple website to fill in the citation information for your software.
-To do so, go to the [`cffinit` website](https://citation-file-format.github.io/cff-initializer-javascript/).
+- Create a `CITATION.cff` file with ease using the form on the [cffinit website](https://citation-file-format.github.io/cff-initializer-javascript/){: .btn .btn--info}.
+- Copy and paste the [example above](#what-is-a-citation-cff-file) into the root of your code repository, and adapt the information to your software.
 
 To learn more about how to work with the Citation File Format, have a look at the [documentation](https://github.com/citation-file-format/citation-file-format/blob/main/README.md).
 

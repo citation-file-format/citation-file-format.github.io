@@ -10,3 +10,5 @@ main:
     url: https://github.com/citation-file-format/citation-file-format/blob/master/README.md
   - title: '<i class="fa fa-graduation-cap"></i> Tutorials'
     url: /tutorials/
+  - title: '<i class="fa fa-plus-circle"></i> Create CFF file'
+    url: ./#create-a-citationcff-file-now
