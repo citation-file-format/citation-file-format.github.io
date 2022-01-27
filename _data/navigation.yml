@@ -7,7 +7,7 @@ main:
   - title: '<i class="fa fa-handshake-o"></i> Events'
     url: /events/
   - title: '<i class="fa fa-file-text"></i> Documentation'
-    url: https://github.com/citation-file-format/citation-file-format/blob/master/README.md
+    url: https://github.com/citation-file-format/citation-file-format/blob/main/README.md
   - title: '<i class="fa fa-graduation-cap"></i> Tutorials'
     url: /tutorials/
   - title: '<i class="fa fa-plus-circle"></i> Create CFF file'
