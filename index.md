@@ -16,7 +16,7 @@ message: "If you use this software, please cite it as below."
 authors:
   - family-names: Druskat
     given-names: Stephan
-    orcid: https://orcid.org/0000-0003-4925-7248
+    orcid: https://orcid.org/1234-5678-9101-1121
 title: "My Research Software"
 version: 2.0.4
 doi: 10.5281/zenodo.1234
