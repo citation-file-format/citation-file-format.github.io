@@ -36,7 +36,7 @@ People who want to cite your software may ask questions like:
 {: .notice--info}
 
 <i class="fa fa-question-circle"></i> What label should I use to uniquely identify the version of the software I have used?
-{: .notice--warning .text-right}
+{: .notice--warning}
 
 <i class="fa fa-question-circle"></i> What is the appropriate set of people that should be cited as authors?
 {: .notice--success}
