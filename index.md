@@ -19,7 +19,9 @@ authors:
     orcid: https://orcid.org/1234-5678-9101-1121
 title: "My Research Software"
 version: 2.0.4
-doi: 10.5281/zenodo.1234
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
 date-released: 2021-08-11
 {% endhighlight %}
 
