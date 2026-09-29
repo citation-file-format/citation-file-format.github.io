@@ -94,7 +94,7 @@ Different tools exist to help you work with `CITATION.cff` files:
 - The **converter** can convert a `CITATION.cff` to other formats (e.g., to *BibTeX*, *RIS*, *CodeMeta*, and others): <https://github.com/citation-file-format/cff-converter-python>.
 
 There are further tools for specific use cases, and different environments.
-The documentation has a brief [overview of available tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
+The documentation has a brief [overview of available tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files).
 
 # Have an idea? Found a problem?
 

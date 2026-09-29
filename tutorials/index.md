@@ -25,7 +25,7 @@ docker run --rm \
 
 ### Python 3
 
-The [Citation File Format README](https://github.com/citation-file-format/citation-file-format#validation-heavy_check_mark)
+The [Citation File Format README](https://github.com/citation-file-format/citation-file-format#validation)
 describes how to validate `CITATION.cff` files in Python 3.
 
 If you want to avoid cloning the Citation File Format repository, as described there, you can also [download the Python script directly](https://github.com/citation-file-format/citation-file-format/blob/main/examples/validator.py). Note that you may still need to install the required Python packages.
